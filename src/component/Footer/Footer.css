@@ -1,0 +1,19 @@
+.footer {
+  margin-bottom: -20px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.filters {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  margin-right: 10px;
+}

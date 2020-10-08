@@ -1,7 +1,9 @@
 import React from "react";
-import "./body.css";
+import "./Body.css";
+import TodoList from "./container/TodoList";
+import Submit from "./submit/Submit";
 
-class App extends React.Component {
+class Body extends React.Component {
   state = {
     tasks: [
       "task1",
@@ -10,14 +12,17 @@ class App extends React.Component {
       "learning somethingPretty",
     ],
   };
+  //此处[tasks]中的[task]，来源于输入框中的[item]，将短暂地作为[todo]传入元素[todos]和组件[<Todo />]中
 
+  /*原例子中删除待办任务的功能
   handelDelete = (index) => {
     const newArr = [...this.state.tasks];
     newArr.splice(index, 1);
     this.setState({ tasks: newArr });
   };
+  */
 
-  handelSubmit = (task) => {
+  handleSubmit = (task) => {
     this.setState({ tasks: [...this.state.tasks, task] });
   };
 
@@ -25,8 +30,11 @@ class App extends React.Component {
     return (
       <div className="wrapper">
         <div>
-          <SubmitForm onFormSubmit={this.handelSubmit} />
-          <TodoList tasks={this.state.tasks} onDelete={this.handelDelete} />
+          <Submit onFormSubmit={this.handleSubmit} />
+          <TodoList
+            tasks={this.state.tasks}
+            /*onDelete={this.handelDelete}*/
+          />
         </div>
       </div>
     );
@@ -45,6 +53,7 @@ const Header = (props) => {
 };
 */
 
+/*
 const TodoList = (props) => {
   const todos = props.tasks.map((todo, index) => {
     return (
@@ -66,11 +75,13 @@ const Todo = (props) => {
     </li>
   );
 };
+*/
 
+/*
 class SubmitForm extends React.Component {
   state = { term: "" };
 
-  handelSubmit = (e) => {
+  handleSubmit = (e) => {
     e.preventDefault();
     if (this.state.term === "") {
       return;
@@ -82,7 +93,7 @@ class SubmitForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handelSubmit}>
+      <form onSubmit={this.handleSubmit}>
         <input
           type="text"
           className="input"
@@ -94,6 +105,6 @@ class SubmitForm extends React.Component {
       </form>
     );
   }
-}
+}*/
 
-export default App;
+export default Body;

@@ -1,19 +1,19 @@
 import React from "react";
-import "./Todo.css";
+import "./TodoDemo.css";
 import Header from "./component/Header/Header";
-import App from "./component/Body/body";
+import Body from "./component/Body/Body";
 import Footer from "./component/Footer/Footer";
 
-class Todo extends React.Component {
+class TodoDemo extends React.Component {
   render() {
     return (
       <div className="wrapper">
         <Header />
-        <App />
+        <Body />
         <Footer />
       </div>
     );
   }
 }
 
-export default Todo;
+export default TodoDemo;

@@ -68,7 +68,7 @@ class Submit extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className="from" onSubmit={this.handleSubmit}>
         <input
           type="text"
           className="input"

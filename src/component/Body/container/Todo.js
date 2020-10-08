@@ -1,4 +1,5 @@
 import React from "react";
+import "./TodoList.css";
 
 //这是每一条待办任务的组件
 /*
@@ -24,8 +25,8 @@ export default Item;
 function Todo(props) {
   return (
     <li className={props.id % 2 === 0 ? null : "even"}>
-      <input type="checkbox" />
-      {props.content}
+      <input type="checkbox" className="checkbox" />
+      <input type="text" className="input-text" value={props.content} />
     </li>
   );
 }

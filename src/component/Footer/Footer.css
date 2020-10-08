@@ -1,10 +1,7 @@
 .footer {
-  margin-bottom: -20px;
   padding: 0px;
+  margin: 10px 0px 15px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin-left: 20px;
 }
 
 .filters {
@@ -14,6 +11,16 @@
   justify-content: center;
 }
 
-button {
-  margin-right: 10px;
+.button-footer {
+  margin-right: 20px;
+  padding: 2.5px 7px 3px;
+  border: 1px solid #f4ecec;
+  border-radius: 5px;
+  background-color: pink;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  flex-grow: 0;
+  cursor: pointer;
 }

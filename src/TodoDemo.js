@@ -7,7 +7,7 @@ import Footer from "./component/Footer/Footer";
 class TodoDemo extends React.Component {
   render() {
     return (
-      <div className="wrapper">
+      <div className="container">
         <Header />
         <Body />
         <Footer />

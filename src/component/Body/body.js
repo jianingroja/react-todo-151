@@ -8,8 +8,8 @@ class Body extends React.Component {
     tasks: [
       "task1",
       "task2",
-      "learning JavaScript",
-      "learning somethingPretty",
+      "Learning JavaScript",
+      "Learning somethingPretty",
     ],
   };
   //此处[tasks]中的[task]，来源于输入框中的[item]，将短暂地作为[todo]传入元素[todos]和组件[<Todo />]中
@@ -28,7 +28,7 @@ class Body extends React.Component {
 
   render() {
     return (
-      <div className="wrapper">
+      <div className="todo-body">
         <div>
           <Submit onFormSubmit={this.handleSubmit} />
           <TodoList

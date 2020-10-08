@@ -5,9 +5,9 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="footer">
-        <button>All</button>
-        <button>Active</button>
-        <button>Completed</button>
+        <button className="button-footer">All</button>
+        <button className="button-footer">Active</button>
+        <button className="button-footer">Completed</button>
       </div>
     );
   }

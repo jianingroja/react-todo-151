@@ -1,5 +1,11 @@
-.wrapper {
+.container {
   text-align: left;
-  margin-left: 20px;
+
   width: 400px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 5px;
 }

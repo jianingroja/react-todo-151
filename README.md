@@ -18,3 +18,10 @@ Took a morning to split Body into Parts, adjsuting names and structure according
   - Submit.js
 - css still in chaos.
 - Needs further improvement.
+
+## third commit 08/10
+
+Took half afternoon perfecting css to make lookable...
+
+- css is in order, but is not fully understood, and still possess the possibility of stepping into chaos..
+- Will do improvement in the future

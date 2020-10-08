@@ -1,6 +1,6 @@
-#Commit Log
+# Commit Log
 
-## first commit
+## first commit 07/10
 
 Took ages attempting to understand how React-Tenent work...
 
@@ -12,8 +12,9 @@ Took ages attempting to understand how React-Tenent work...
 
 Took a morning to split Body into Parts, adjsuting names and structure accordingly and respectively...
 
-- Body.js is splited into
+- Body.js is splited into:
   - TodoList.js
     - Todo.js
   - Submit.js
-- css still in chaos
+- css still in chaos.
+- Needs further improvement.
